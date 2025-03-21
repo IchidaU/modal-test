@@ -30,6 +30,7 @@ export const UserManagement: FC = memo(() => {
         </Center>
       ) : (
         <Wrap p={{ base: 4, md: 10 }}>
+          {/* users.mapを消すとモーダルが出る */}
           {users.map((user) => (
             <WrapItem key={user.id} mx="auto">
               <UserCard
