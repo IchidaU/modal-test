@@ -66,6 +66,11 @@ export const UserManagement: FC = memo(() => {
 
   return (
     <>
+      {/* {loading ? (
+        <Center h="100vh">
+          <Spinner />
+        </Center>
+      ) : ( */}
       <Wrap p={{ base: 4, md: 10 }}>
         {/* users.mapを消すとモーダルが出る */}
         {users.map((user) => (
@@ -80,6 +85,7 @@ export const UserManagement: FC = memo(() => {
           </WrapItem>
         ))}
       </Wrap>
+      {/* )} */}
       <UserDetailModal user={selectedUser} open={open} setOpen={setOpen} />
     </>
   );
