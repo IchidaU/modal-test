@@ -17,6 +17,7 @@ export const UserDetailModal: FC<Props> = memo((props) => {
       onOpenChange={(e) => setOpen(e.open)}
       motionPreset="slide-in-bottom"
       trapFocus={false}
+      placement="top"
     >
       <Dialog.Backdrop />
       <Dialog.Content pb={6}>
