@@ -17,9 +17,18 @@ export const UserDetailModal: FC<Props> = memo((props) => {
       onOpenChange={(e) => setOpen(e.open)}
       motionPreset="slide-in-bottom"
       trapFocus={false}
+      placement="top"
     >
       <Dialog.Backdrop />
-      <Dialog.Content pb={6}>
+      <Dialog.Content
+        pb={6}
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
         <Dialog.Title>ユーザー詳細</Dialog.Title>
         <Dialog.Body mx={4}>
           <Stack gap={4}>
